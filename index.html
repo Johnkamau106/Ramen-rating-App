@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <nav class="navbar">
+        <h1>Ramen Rater</h1>
+    </nav>
+    <div id="ramen-menu"></div>
+    <div>
+        <input type="text" id="name" placeholder="Ramen Name" />
+        <input type="text" id="restaurant" placeholder="Restaurant Name" />
+        <input type="text" id="image" placeholder="Image URL" />
+        <input type="number" id="rating" placeholder="Rating (1-5)" />
+        <textarea id="comment" placeholder="Leave a comment"></textarea>
+        <button id="add-ramen-btn">Add Ramen</button>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
