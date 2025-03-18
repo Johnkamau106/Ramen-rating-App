@@ -2,12 +2,82 @@
     height: 60px;
     background-color: rgb(12, 12, 12);
     color: white;
-    display: flex;
+    display: center;
     justify-content: space-between;
     width: 100%;
 
   }
   .navbar h1 {
     
+  }
+  
+div {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  
+  
+  button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+ 
+  button:hover {
+    background-color: #043f04;
+  }
+  
+  
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  
+  input, textarea, button {
+    margin-bottom: 10px;
+  }
+  
+
+  @media (max-width: 600px) {
+    div {
+      padding: 15px;
+      margin: 10px;
+    }
+  
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
   }
   
