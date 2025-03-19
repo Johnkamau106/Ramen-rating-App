@@ -1,0 +1,88 @@
+
+
+body {
+  font-family: 'Playfair Display', serif;
+  color: rgb(4, 16, 30);
+  padding: 20px;
+  margin: 0;
+}
+
+#ramen-title-container {
+  background-color: black;
+  width: 100%;
+  padding: 13px;
+  text-align: center;
+   margin-top: 0;
+   position:absolute;
+   top: 2px;
+   left: 2px;
+}
+
+#ramen-title {
+  color: rgb(243, 238, 238);
+  font-size: 1.7em;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+#ramen-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+  align-items: center;      
+  margin-top: 20px;         
+  width: 100%;              
+  gap: 10px;                
+  text-align: center;       
+}
+
+.ramen-image {
+  width: 200px; 
+  height: 100px; 
+  object-fit: cover; 
+  margin-left: 5px; 
+  margin-top: 30px; 
+  cursor: pointer; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.ramen-image:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6); 
+}
+
+#selected-ramen-image {
+  width: 120px;  
+  height: 120px; 
+  object-fit: cover;  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin: 20px auto;  
+  display: block;  
+  border-radius: 8px;  
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}
+
+#selected-ramen-image:hover {
+  transform: scale(1.05);  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+
+#selected-ramen-text {
+  position: absolute;
+  top: 50%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  background-color:  rgba(255, 255, 255, 0);
+  color: rgb(15, 15, 15);
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px; 
+}
+
+
+

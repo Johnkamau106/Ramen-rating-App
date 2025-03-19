@@ -12,28 +12,47 @@
         <span id="ramen-title">Ramen Rater</span>
     </div>
 
+    <div id="ramen-menu"></div>
     
+    <div id="selected-ramen-container" style="display: none;">
+        <div class="selected-ramen-wrapper">
+            <div class="selected-ramen-image-container">
+                <img id="selected-ramen-image" src="" alt="" class="ramen-image" />
+                <div id="selected-ramen-text">
+                    <h2 id="ramen-name"></h2>
+                    <p id="ramen-restaurant"></p>
+                </div>
+            </div>
+        </div>
+        <p id="ramen-rating">Rating:</p>
+        <p id="rating-value">10/10</p>
+        
+        <p id="ramen-comment">Comment:</p>
+        <p id="comment-value">My Absolute fave</p>
+        
+        <button id="Add-Ramen-ramen">Add Ramen</button>
+    </div>
 
     <form id="new-ramen-form">
         <div>
             <label for="name"> Name:</label>
-            <input type="text" id="name" placeholder="" required>
+            <input type="text" id="name" >
         </div>
         <div>
             <label for="restaurant">Restaurant:</label>
-            <input type="text" id="restaurant" placeholder="" required>
+            <input type="text" id="restaurant" >
         </div>
         <div>
             <label for="image">Image:</label>
-            <input type="url" id="image" placeholder="" required>
+            <input type="url" id="image" placeholder="" >
         </div>
         <div>
             <label for="rating">Rating:</label>
-            <input type="number" id="rating" placeholder="" max="5" required>
+            <input type="number" id="rating"  max="5" >
         </div>
         <div>
             <label for="comment">Comment:</label>
-            <textarea id="comment" placeholder=""></textarea>
+            <textarea id="comment"></textarea>
         </div>
         <button id="Create">Create</button>
     </form>
