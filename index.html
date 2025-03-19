@@ -1,31 +1,44 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ramen Rating App</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <h1>Ramen Rater</h1>
-    </nav>
-    <div id="ramen-menu"></div>
-    <div>
-        <h3>New Ramen</h3>
-        <label for="Name">Name:</label>
-        <input type="text" id="name"  />
-        <label for="Restaurant">Restaurant:</label>
-        <input type="text" id="restaurant" />
-        <label for="Image">Image:</label>
-        <input type="text" id="image" />
-        <label for="Rating">Rating:</label>
-        <input type="number" id="rating" />
-        <label for="Leave a comment">Leave a comment:</label>
-        <textarea id="comment"></textarea>
-        <button id="add-ramen-btn">create</button>
+    <div id="ramen-title-container">
+        <span id="ramen-title">Ramen Rater</span>
     </div>
 
-    <script src="index.js"></script>
+    
+
+    <form id="new-ramen-form">
+        <div>
+            <label for="name"> Name:</label>
+            <input type="text" id="name" placeholder="" required>
+        </div>
+        <div>
+            <label for="restaurant">Restaurant:</label>
+            <input type="text" id="restaurant" placeholder="" required>
+        </div>
+        <div>
+            <label for="image">Image:</label>
+            <input type="url" id="image" placeholder="" required>
+        </div>
+        <div>
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" placeholder="" max="5" required>
+        </div>
+        <div>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" placeholder=""></textarea>
+        </div>
+        <button id="Create">Create</button>
+    </form>
+
+    <script src="./index.js"></script>
 </body>
 </html>
+
